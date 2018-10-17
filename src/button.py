@@ -32,7 +32,7 @@ class KeycapButton(Button):
     def __init__(self, parent, keyboard, rect, key_id, layers, active_layer):
         super().__init__(
                 parent,
-                layers[active_layer][1][key_id],
+                layers[active_layer]['label'],
                 rect,
                 self.open_config_menu,
                 keyboard.buttons,
@@ -58,4 +58,14 @@ class LayerButton:
         self.parent = parent
         self.layers = layers
         for i in range(len(layers)):
-            Button(parent, self.layers[i][0], Rect((button_size[0] + 5) * i + 100, 560, button_size[0], button_size[1]), lambda: self.parent.keyboard.set_active_layer(i), self.ui, '')
+            Button(
+                parent,
+                self.layers[i][0],
+                Rect(
+                    (button_size[0] + 5) * i + 100,
+                    560,
+                    button_size[0],
+                    button_size[1]),
+                lambda: self.parent.keyboard.set_active_layer(i),
+                self.ui,
+                'Layer {}'.format(i + 1))

@@ -54,27 +54,6 @@ class Window(QMainWindow):
         self.setWindowModality(Qt.ApplicationModal)
         self.setGeometry(self.window_x, self.window_y, self.width, self.height)
 
-class App(Window):
-
-    def __init__(self):
-        super().__init__(None, 'ergodox-gui-firmware')
-        self.layers = []
-        self.active_layer = 0
-        self.layers.append(['a', default_dvp_layout])
-        self.layers.append(['b', empty_layout])
-
-        from keyboard import Keyboard
-        from button   import Button, LayerButton
-
-        self.keyboard = Keyboard(self, self.layers, self.active_layer)
-        self.ui = []
-        lb = LayerButton(self, 0, 0, self.layers)
-        Button(self, 'write', Rect(742, 560, button_size[0], button_size[1]), lambda: self.write(), self.ui, '')
-        self.show()
-
-    def write(self):
-        print('test')
-
 class ConfigWindow(Window):
     def __init__(self, parent, width=800, height=600):
         super().__init__(
@@ -84,5 +63,6 @@ class ConfigWindow(Window):
             height)
         from button import Button
         self.ui = []
-        Button(self, 'save', Rect(742, 560, button_size[0], button_size[1]), lambda: self.hide(), self.ui, '')
+        Button(self, 'save', Rect(742, 560, button_size[0], button_size[1]),
+               lambda: self.hide(), self.ui, '')
         self.show()

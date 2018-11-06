@@ -1,8 +1,7 @@
-import jon
+import json
 
-from window   import Window
-from button   import Button, LayerButton
-from keyboard import Keyboard
+from window   import Window, KeycapConfigWindow
+from button   import Button
 from utils    import Rect
 from config   import *
 
@@ -10,41 +9,43 @@ class App(Window):
 
     def __init__(self):
         super().__init__(None, 'ergodox-gui-configurator')
-        self.layers = {}
-        self.active_layer = '0'
 
-        self.import_layers('default.json')
-        self.keyboard = Keyboard(self, self.layers, self.active_layer)
+        self.import_layers('dvorak_programmer.json')
+        self.active_layer = 0
 
-        #self.layers.append(['layer 0', default_dvp_layout])
-        #self.export_layers('new.json')
-        #self.generate_json('default.json')
+
+        self.keys = []
+
+        scale = 4
+        offset = 10
+
+        for key in self.data['matrix']:
+            Button(
+                self,
+                self.keys,
+                key['layers'][0]['label'],
+                Rect(
+                    offset + key['x'] * scale,
+                    offset + key['y'] * scale,
+                    key['w'] * scale,
+                    key['h'] * scale
+                    ),
+                lambda: KeycapConfigWindow(self).show()
+                )
+
         #self.ui = []
         #lb = LayerButton(self, 0, 0, self.layers)
         #Button(self, 'write', Rect(742, 560, button_size[0], button_size[1]),
         #       lambda: self.write(), self.ui, '')
         self.show()
 
-
-    def generate_json(self, filepath):
-        data = []
-        for i in range(76):
-            key = input("pressa key to assign it to key {}: ".format(i))
-            data.append({'code': i, 'layers': {'0':{'key': key ,'label': key}}})
-
-        data = json.dumps(data)
-        with open(filepath, 'w') as f:
-            f.write(data)
+    def set_active_layer(self, layer):
+        for key in self.keys:
+            key.set_label = self.data['layers'][layer]['label']
 
     def import_layers(self, filepath):
         with open(filepath) as f:
-            self.layers = json.loads(''.join(f.readlines()))
-
-    def export_layers(self, filepath):
-        data = json.dumps(self.layers)
-
-        with open(filepath, 'w') as f:
-            f.write(data)
+            self.data = json.loads(''.join(f.readlines()))
 
     def write(self):
         pass

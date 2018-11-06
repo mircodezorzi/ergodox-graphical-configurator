@@ -1,14 +1,11 @@
-# Mirco De Zorzi - 2018/06/12
-
 from PyQt5.QtWidgets import QWidget, QMainWindow
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore    import Qt
 
 import gi.repository
 gi.require_version('Gdk', '3.0')
 from gi.repository import Gdk
 
-from utils import Rect
-from config import *
+from utils  import Rect
 
 # from keyboard import Keybroad
 # from button   import Button
@@ -23,14 +20,14 @@ from config import *
 #
 # Use:
 #
-# class ConfigWindow(Window):
+# class App(Window):
 #   def __init__(self, parent, title):
-#       super().__init__(parent, title)
+#       super().__init__(parent, title, modal)
 #
-# primary_window   = ConfigWindow(None, 'This is my primary window')
-# secondary_window = ConfigWindow(primary_window, None, 'This is my primary window')
+# primary   = App(None,    'This is my primary window')
+# secondary = App(primary, 'This is my secondary window')
 #
-# primary_window.show()
+# primary.show()
 
 class Window(QMainWindow):
 
@@ -54,15 +51,16 @@ class Window(QMainWindow):
         self.setWindowModality(Qt.ApplicationModal)
         self.setGeometry(self.window_x, self.window_y, self.width, self.height)
 
-class ConfigWindow(Window):
+class KeycapConfigWindow(Window):
     def __init__(self, parent, width=800, height=600):
         super().__init__(
             parent, 'Config menu for key {}'
-            .format('0' * (parent.key_id < 9) + str(parent.key_id + 1)),
+            #.format('0' * (parent.key_id < 9) + str(parent.key_id + 1)),
+            'title',
             width,
             height)
         from button import Button
         self.ui = []
-        Button(self, 'save', Rect(742, 560, button_size[0], button_size[1]),
-               lambda: self.hide(), self.ui, '')
+        Button(self, self.ui, 'save', Rect(742, 560, 10, 10),
+               lambda: self.hide(), '')
         self.show()

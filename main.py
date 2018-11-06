@@ -1,5 +1,6 @@
 import sys
 sys.path.insert(0, './src/')
+sys.path.insert(0, './src/ui/')
 
 from PyQt5.QtWidgets import QApplication
 from app             import App

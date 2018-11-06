@@ -1,0 +1,22 @@
+# app.py
+
+        menu_bar = self.menuBar()
+        menu_file = menu_bar.addMenu('File')
+
+        new_action(
+            self, menu_file,
+            'Load', 'Ctrl-O', '',
+            self.read_data)
+        new_action(
+            self, menu_file,
+            'Write', 'Ctrl-S', '',
+            lambda: self.write_data('dvorak.json'))
+        new_action(
+            self, menu_file,
+            'Write As', 'Ctrl-Shift-S', '',
+            self.write_data)
+        new_action(
+            self, menu_file,
+            'Exit', 'Ctrl-X', '',
+            lambda: exit(self))
+

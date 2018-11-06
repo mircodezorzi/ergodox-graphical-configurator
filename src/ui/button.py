@@ -1,9 +1,5 @@
-from PyQt5.QtWidgets import QWidget,QPushButton
+from PyQt5.QtWidgets import QWidget, QPushButton, QCheckBox
 from PyQt5.QtCore    import Qt, pyqtSlot
-
-#from window import ConfigWindow
-#from utils  import Rect
-#from config import *
 
 class Button(QWidget):
 
@@ -20,10 +16,29 @@ class Button(QWidget):
         self.group.append(self)
 
         self.button = QPushButton(label, parent)
-        self.button.clicked.connect(self.callback)
+        self.button.clicked.connect(callback)
         self.button.resize(rect.w, rect.h)
         self.button.move(rect.x, rect.y)
         self.button.setToolTip(tooltip)
+
+class Checkbox(QWidget):
+
+    def __init__(self, parent, group, label, rect, state, callback):
+        super().__init__()
+
+        self.parent   = parent
+        self.group    = group
+        self.label    = label
+        self.rect     = rect
+        self.callback = callback
+
+        self.group.append(self)
+
+        self.checkbox = QCheckBox(label, parent)
+        self.checkbox.stateChanged.connect(callback)
+        self.checkbox.resize(rect.w, rect.h)
+        self.checkbox.move(rect.x, rect.y)
+        self.checkbox.setCheckState(state)
 
 '''
 class LayerButton:

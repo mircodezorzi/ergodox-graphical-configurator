@@ -1,0 +1,1162 @@
+{
+    "header": {
+        "Name": "Dvorak Programmer",
+        "Variant": "Standard",
+        "Version": "1.0",
+        "Author": "Mirco De Zorzi"
+    },
+
+    "layers": [
+        {
+            "name": "base",
+            "leds": {
+                "led1": 1,
+                "led2": 1,
+                "led3": 0
+            }
+        }
+    ],
+
+    "matrix": [
+        {
+            "code": "0x00",
+            "x": 0,
+            "y": 0,
+            "w": 15,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_ESCAPE",
+                    "label": "ESC",
+                    "shifted-key": "MACRO_PASSWORD",
+                    "shifted-label": "PASSWORD"
+                }
+            ]
+        },
+        {
+            "code": "0x01",
+            "x": 15,
+            "y": 0,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_LBRACKET",
+                    "label": "[",
+                    "shifted-key": "KC_7",
+                    "shifted-label": "7"
+                }
+            ]
+        },
+        {
+            "code": "0x02",
+            "x": 25,
+            "y": -1,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_LCBRACKET",
+                    "label": "{",
+                    "shifted-key": "KC_5",
+                    "shifted-label": "5"
+                }
+            ]
+        },
+        {
+            "code": "0x03",
+            "x": 35,
+            "y": -2,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_RCBRACKET",
+                    "label": "}",
+                    "shifted-key": "KC_3",
+                    "shifted-label": "3"
+                }
+            ]
+        },
+        {
+            "code": "0x04",
+            "x": 45,
+            "y": -1,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_RCBRACKET",
+                    "label": "(",
+                    "shifted-key": "KC_1",
+                    "shifted-label": "1"
+                }
+            ]
+        },
+        {
+            "code": "0x05",
+            "x": 55,
+            "y": 0,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_EQUAL",
+                    "label": "=",
+                    "shifted-key": "KC_9",
+                    "shifted-label": "9"
+                }
+            ]
+        },
+        {
+            "code": "0x06",
+            "x": 65,
+            "y": 0,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x07",
+            "x": 0,
+            "y": 10,
+            "w": 15,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_BSLASH",
+                    "label": "\\",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x08",
+            "x": 15,
+            "y": 10,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_SCOLON",
+                    "label": ";",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x0A",
+            "x": 25,
+            "y": 9,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_COMMA",
+                    "label": ",",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x0B",
+            "x": 35,
+            "y": 8,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_DOT",
+                    "label": ".",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x0C",
+            "x": 45,
+            "y": 9,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_P",
+                    "label": "p",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x0D",
+            "x": 55,
+            "y": 10,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_Y",
+                    "label": "y",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x0E",
+            "x": 65,
+            "y": 10,
+            "w": 10,
+            "h": 15,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x0F",
+            "x": 0,
+            "y": 20,
+            "w": 15,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_LCTRL",
+                    "label": "CTRL",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x10",
+            "x": 15,
+            "y": 20,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_A",
+                    "label": "a",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x11",
+            "x": 25,
+            "y": 19,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_O",
+                    "label": "o",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x12",
+            "x": 35,
+            "y": 18,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_E",
+                    "label": "e",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x13",
+            "x": 45,
+            "y": 19,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_U",
+                    "label": "u",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x14",
+            "x": 55,
+            "y": 20,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_I",
+                    "label": "u",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x15",
+            "x": 0,
+            "y": 30,
+            "w": 15,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_LSHIFT",
+                    "label": "SHIFT",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x16",
+            "x": 15,
+            "y": 30,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_QUOTE",
+                    "label": "'",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x17",
+            "x": 25,
+            "y": 29,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_Q",
+                    "label": "q",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x18",
+            "x": 35,
+            "y": 28,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_J",
+                    "label": "j",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x19",
+            "x": 45,
+            "y": 29,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_K",
+                    "label": "k",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x1A",
+            "x": 55,
+            "y": 30,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_X",
+                    "label": "x",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x1B",
+            "x": 65,
+            "y": 25,
+            "w": 10,
+            "h": 15,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x1C",
+            "x": 5,
+            "y": 40,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x1D",
+            "x": 15,
+            "y": 40,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x1E",
+            "x": 25,
+            "y": 39,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x1E",
+            "x": 35,
+            "y": 38,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x20",
+            "x": 45,
+            "y": 39,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x21",
+            "x": 65,
+            "y": 40,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x22",
+            "x": 75,
+            "y": 40,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x23",
+            "x": 75,
+            "y": 50,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x24",
+            "x": 55,
+            "y": 50,
+            "w": 10,
+            "h": 20,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x25",
+            "x": 65,
+            "y": 50,
+            "w": 10,
+            "h": 20,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x26",
+            "x": 75,
+            "y": 60,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x27",
+            "x": 105,
+            "y": 0,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x28",
+            "x": 115,
+            "y": 0,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_ASTERISK",
+                    "label": "*",
+                    "shifted-key": "KC_0",
+                    "shifted-label": "0"
+                }
+            ]
+        },
+        {
+            "code": "0x29",
+            "x": 125,
+            "y": -1,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_LPRN",
+                    "label": ")",
+                    "shifted-key": "KC_0",
+                    "shifted-label": "0"
+                }
+            ]
+        },
+        {
+            "code": "0x2A",
+            "x": 135,
+            "y": -2,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_PLUS",
+                    "label": "+",
+                    "shifted-key": "KC_2",
+                    "shifted-label": "2"
+                }
+            ]
+        },
+        {
+            "code": "0x2B",
+            "x": 145,
+            "y": -1,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_RBRACKET",
+                    "label": "]",
+                    "shifted-key": "KC_4",
+                    "shifted-label": "4"
+                }
+            ]
+        },
+        {
+            "code": "0x2C",
+            "x": 155,
+            "y": 0,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_EXLM",
+                    "label": "!",
+                    "shifted-key": "KC_6",
+                    "shifted-label": "6"
+                }
+            ]
+        },
+        {
+            "code": "0x2D",
+            "x": 165,
+            "y": 0,
+            "w": 15,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x2E",
+            "x": 105,
+            "y": 10,
+            "w": 10,
+            "h": 15,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x2F",
+            "x": 115,
+            "y": 10,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_F",
+                    "label": "f",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x30",
+            "x": 125,
+            "y": 9,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_G",
+                    "label": "g",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x31",
+            "x": 135,
+            "y": 8,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_C",
+                    "label": "c",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x32",
+            "x": 145,
+            "y": 9,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_R",
+                    "label": "r",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x33",
+            "x": 155,
+            "y": 10,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_L",
+                    "label": "l",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x34",
+            "x": 165,
+            "y": 10,
+            "w": 15,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_SLASH",
+                    "label": "/",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x35",
+            "x": 115,
+            "y": 20,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_D",
+                    "label": "d",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x36",
+            "x": 125,
+            "y": 19,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_H",
+                    "label": "h",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x37",
+            "x": 135,
+            "y": 18,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_T",
+                    "label": "t",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x38",
+            "x": 145,
+            "y": 19,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_N",
+                    "label": "n",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x39",
+            "x": 155,
+            "y": 20,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_S",
+                    "label": "s",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x3A",
+            "x": 165,
+            "y": 20,
+            "w": 15,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_DELETE",
+                    "label": "DEL",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x3B",
+            "x": 105,
+            "y": 25,
+            "w": 10,
+            "h": 15,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x3C",
+            "x": 115,
+            "y": 30,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_B",
+                    "label": "b",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x3D",
+            "x": 125,
+            "y": 29,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_M",
+                    "label": "m",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x3E",
+            "x": 135,
+            "y": 28,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_W",
+                    "label": "w",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x3D",
+            "x": 145,
+            "y": 29,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_V",
+                    "label": "v",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x3E",
+            "x": 155,
+            "y": 30,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_Z",
+                    "label": "z",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x3F",
+            "x": 165,
+            "y": 30,
+            "w": 15,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "KC_RSHIFT",
+                    "label": "SHIFT",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x40",
+            "x": 125,
+            "y": 39,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x41",
+            "x": 135,
+            "y": 38,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x42",
+            "x": 145,
+            "y": 39,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x43",
+            "x": 155,
+            "y": 40,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x44",
+            "x": 165,
+            "y": 40,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x45",
+            "x": 95,
+            "y": 40,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x46",
+            "x": 105,
+            "y": 40,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x47",
+            "x": 95,
+            "y": 50,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x48",
+            "x": 95,
+            "y": 60,
+            "w": 10,
+            "h": 10,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x49",
+            "x": 105,
+            "y": 50,
+            "w": 10,
+            "h": 20,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        },
+        {
+            "code": "0x4A",
+            "x": 115,
+            "y": 50,
+            "w": 10,
+            "h": 20,
+            "layers": [
+                {
+                    "key": "",
+                    "label": "",
+                    "shifted-key": "",
+                    "shifted-label": ""
+                }
+            ]
+        }
+    ]
+}
